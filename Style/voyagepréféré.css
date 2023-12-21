@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+
+section h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    color:#596e79 ;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    text-shadow: 10px 10px 25px rgba(89, 110, 121, 0.36),
+    -10px 10px 25px rgba(89, 110, 121, 0.36),
+    -10px -10px 25px rgba(89, 110, 121, 0.36),
+     10px -10px 25px rgba(89, 110, 121, 0.36)
+}
+#imgbourgogne {
+    margin-left: 8%;
+    width: 80%;
+    border-radius: 15px;
+    border: rgb(161, 152, 152) solid 10px;
+    
+}
+section h2 {
+    font-weight: normal;
+    color:#596e79 ;
+    font-family: 'Alegreya', serif;
+    font-size: 2em;
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 40px;
+    
+
+
+    
+}
+section h3 {
+    font-weight: normal;
+    color:#596e79 ;
+    font-family: 'Alegreya', serif;
+    font-size: 1.5em;
+}
+section p a {
+    text-decoration: none;
+    font-weight: bold;
+    font-style: italic;
+}
+section p a:visited {
+    color: black;
+}
+section p a:hover {
+    color: rgb(214, 165, 105);
+}
+
+section p a:active {
+   color: rgb(148, 125, 125);
+}
+#imgplans {
+    margin-left: 30%;
+    width: 35%;
+    height: 20%;
+    border-radius: 15px;
+    border: rgb(255, 255, 255) solid 10px;
+    transition: transform 0.5s ease;
+}
+
+#imgplans:hover {
+    transform: scale(1.2);
+}
+
+#lienpageprecedente {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 30px;
+    font-family: "Lora-Regular";
+    display: inline-block;
+    color: transparent;
+    background: linear-gradient(to right, #ddd, #5b5b5b); /* Dégradé de la gauche vers la droite */
+    background-size: 200% 100%; /* La taille du dégradé est deux fois la largeur du texte */
+    animation: LinkAnimation 3s linear infinite;
+    background-clip: text; /* Pour prendre en compte la couleur du texte */
+    -webkit-background-clip: text;
+}
+
+
+@keyframes LinkAnimation {
+    from {
+      background-position: 100% 0; /* Commence à l'extérieur de l'écran à droite */
+    }
+    to {
+      background-position: -100% 0; /* Termine à l'extérieur de l'écran à gauche */
+    }
+  }
+section i[class="fa-solid fa-arrow-left"]{
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+
+      
+      
+    
+}
+.meteo{
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+}
+
+.widget_autocomplete_preview{
+    margin-left: 24%;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    margin-top: 30px;
+}
+aside h3 {
+    font-weight: normal;
+    color:#596e79 ;
+    font-family: 'Alegreya', serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+.hautdepage {
+    margin-top: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 6px;
+    background-color:rgb(141, 135, 120) ;
+    border-radius: 20px;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.hautdepage:hover {
+    background-color: aliceblue ;
+    color:rgb(141, 135, 120) ;
+}

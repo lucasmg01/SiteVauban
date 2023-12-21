@@ -1,0 +1,97 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lunasima&family=Raleway:wght@300&family=Roboto+Condensed:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,500&display=swap');
+@font-face {
+    font-family:"Lora-Regular" ;
+    src: url(../Fonts/Lora-Regular.ttf);
+}
+@font-face {
+    font-family: "OpenSans-Regular";
+    src: url(../Fonts/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: "EduTASBeginner-Regular";
+    src: url(../Fonts/static/EduTASBeginner-Regular.ttf);
+}
+
+body {
+    max-height: 800px;
+}
+#gradient {
+    background: rgb(240,236,226);
+    background: radial-gradient(circle, rgba(240,236,226,1) 56%, rgb(143, 136, 117) 100%);
+    height: 680px;
+    border-radius: 30px;
+}
+
+section{
+    font-family: "OpenSans-Regular", sans-serif;
+    margin-left: 20px;
+    width: 25%;
+    
+}
+section h1 {
+    font-size: 2.5em;
+    color: #000000;;
+    font-family: 'Dancing Script', cursive;
+    text-shadow:  6px 0px 0px #596e7954;
+    
+}
+section span {
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    color: #000000;;
+    font-weight: bold;
+}
+section img {
+    width: 200px;
+    height: 150px;
+    
+}
+
+#separateur_cv {
+    width: 400pxpx;
+    height: 300px;
+    block-size: 80px;
+   
+    z-index: 1;
+    transform:rotate(90deg);
+   margin-top: 280px;
+   margin-left: -270px;
+  
+}
+
+
+aside {
+    float:right;
+    width: 65%;
+    font-family: "OpenSans-Regular", sans-serif;
+    text-align: center;
+    
+    margin-top: -280px;
+    
+    
+}
+aside h2 {
+    
+    font-family: "Lora-Regular";
+}
+aside ul {
+    list-style: none;
+}
+aside li{
+    padding-bottom: 10px;
+}
+.cvdownload {
+    text-decoration: none;
+    color: aliceblue;
+    padding: 8px;
+    background-color:rgb(141, 135, 120) ;
+    border-radius: 20px;
+    transition: background-color 0.4s ease-in, color 0.4s ease-in;
+}
+.cvdownload:hover {
+    background-color: aliceblue ;
+    color:rgb(141, 135, 120) ;
+}

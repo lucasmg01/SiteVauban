@@ -1,0 +1,177 @@
+@charset "utf-8";
+
+section h1 {
+    font-size: 2.5em;
+    font-weight: normal;
+    color:#596e79 ;
+    padding-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    text-shadow: 10px 10px 25px rgba(89, 110, 121, 0.36),
+    -10px 10px 25px rgba(89, 110, 121, 0.36),
+    -10px -10px 25px rgba(89, 110, 121, 0.36),
+     10px -10px 25px rgba(89, 110, 121, 0.36)
+}
+#firsttitle {
+    padding-top: 60px;
+}
+
+article h2 {
+    font-weight: normal;
+    color:#596e79 ;
+    font-family: 'Alegreya', serif;
+    font-size: 1.5em;
+    text-shadow: 0px 4px 3px rgba(57, 57, 57, 0.4),
+             0px 8px 13px rgba(46, 46, 46, 0.1),
+             0px 18px 23px rgba(69, 69, 69, 0.1);
+}  
+.policespéciale{
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.5em;
+}
+article #imgilederé{
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+    border: whitesmoke solid 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+#imgsaintmartin {
+    width: 20%;
+    border: whitesmoke solid 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s ease;
+    margin-left:40% ;
+}
+#imgsaintmartin:hover {
+    transform: scale(1.6);
+}
+.imgarticle{
+    width: 35%;
+    border: whitesmoke solid 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-left:32.5% ;
+    transition: transform 0.3s ease;
+}
+.imgarticle:hover  {
+    transform: scale(1.4);
+}
+#imgarrascitadelle{
+    width: 60%;
+    margin-left: 20%;
+    border: whitesmoke solid 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#imgplacearras{
+    width: 20%;
+    margin-left: 40%;
+    border: whitesmoke solid 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s ease;
+}
+#imgplacearras:hover{
+    transform: scale(1.4);
+}
+.imgboves{
+    display: inline-block;
+    border: whitesmoke solid 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition: transform 0.3s ease;
+}
+.imgboves:hover{
+    transform: scale(1.4);
+}
+#imgbovesune{
+   width: 30%;
+}
+#imgbovesdeux{
+    width: 30%;
+    height:190px;
+    margin-left: 35%;
+}
+#imgcamaret{
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+    border: whitesmoke solid 10px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#lienpageprecedente {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-decoration: none;
+    padding-top: 30px;
+    font-family: "Lora-Regular";
+    display: inline-block;
+    color: transparent;
+    background: linear-gradient(to right, #ddd, #5b5b5b); /* Dégradé de la gauche vers la droite */
+    background-size: 200% 100%; /* La taille du dégradé est deux fois la largeur du texte */
+    animation: LinkAnimation 3s linear infinite;
+    background-clip: text; /* Pour prendre en compte la couleur du texte */
+    -webkit-background-clip: text;
+}
+
+
+@keyframes LinkAnimation {
+    from {
+      background-position: 100% 0; /* Commence à l'extérieur de l'écran à droite */
+    }
+    to {
+      background-position: -100% 0; /* Termine à l'extérieur de l'écran à gauche */
+    }
+  }
+section i[class="fa-solid fa-arrow-left"]{
+    width: 20px;
+    height: 20px;
+    padding-right: 20px;
+}
+.hautdepage {
+    margin-top: 15px;
+    text-decoration: none;
+    color: aliceblue;
+    padding: 6px;
+    background-color:rgb(141, 135, 120) ;
+    border-radius: 20px;
+    transition: background-color 0.2s ease-in, color 0.2s ease-in;
+}
+.hautdepage:hover {
+    background-color: aliceblue ;
+    color:rgb(141, 135, 120) ;
+}
+aside h2{
+    font-size: 2em;
+    font-weight: normal;
+    color:#596e79 ;
+    padding-top: 20px;
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    text-shadow: 10px 10px 25px rgba(89, 110, 121, 0.36),
+    -10px 10px 25px rgba(89, 110, 121, 0.36),
+    -10px -10px 25px rgba(89, 110, 121, 0.36),
+     10px -10px 25px rgba(89, 110, 121, 0.36)
+}
+.meteo{
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+}
+.widget_autocomplete_preview{
+    margin-left: 24%;
+    border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    margin-top: 30px;
+}
+#ileaside{
+    margin-top: 6%;
+}
+#meteoaside{
+    margin-top: 90%;
+}
+#camaretaside{
+    margin-top: 74.5%;
+}
