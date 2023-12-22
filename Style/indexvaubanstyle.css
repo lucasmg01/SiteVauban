@@ -25,77 +25,69 @@ section h2 {
 }
 
 #listvauban {
-    background-color: #d2c5b5;
-    border: 1px solid #596e79;
+    
+    
+    font-family: 'Alegreya', serif;
+    border: 6px solid #ffffff;
+    background-color: #12121023;
     border-radius: 15px;
     margin-right: auto;
     margin-left: auto;
     height: 60px;
-    width: 69%;
+    width: 75%;
    
    
-    animation: colorPropagation 6s linear infinite; 
-}
-
-@keyframes colorPropagation {
-    0% {
-        background-color: #d2c5b5; /* Couleur de départ */
-    }
-    25% {
-        background-color: #bfb59d; /* Couleur au quart du chemin */
-    }
-    50% {
-        background-color: #8a8068; /* Couleur à mi-chemin */
-    }
-    75% {
-        background-color: #bfb59d; /* Couleur aux trois quarts du chemin */
-    }
-    100% {
-        background-color: #d2c5b5; /* Couleur de retour à la fin */
-    }
+    
 }
 
 
-
+#listvauban ul {
+    display:flex;
+    justify-content: space-between;
+    
+}
 #listvauban li {
-    display: inline-block;
+    
     list-style-type: none;
 }
 
 #listvauban li a {
+    position: relative;
     font-size: 1.3em;
     padding: 5px;
     text-decoration: none;
     text-transform: uppercase;
-    color: #f0ece2;
-    transition: color 0.3s ease-in-out;
-    
-    
-}
-
-
-
-
+    color: #596e79;
+    transition: color 0.4s linear;
+}    
 #listvauban li a:hover {
-    border-radius: 8px;
-    position: relative;
-    top: 5px;
+    color:white;
+    
+    
+}
+#listvauban li a:hover::after {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #ffffff;
+    animation: linkBar 0.8s ease-in-out forwards;
+    
+    position: absolute;
+    bottom: 0;
+}
+
+@keyframes linkBar{
+    from{
+        width: 0%;
+    }
+    to{
+        width: 100%;
+    }
 }
 
 
-#pres {
-    margin-right: 40px;
-}
-
-#genie {
-    margin-right: 40px;
-}
-
-#reform {
-    padding-right: 50px;
-}
 #vidV {
-    margin-left: 30px;
+    margin-right: 50px;
 }
 #titlesection {
     padding-top: 20px;
@@ -136,21 +128,7 @@ section video {
 
 
 /* Animation continue */
-@keyframes colorOscillation {
-    0% {
-        background-color: #bfb59d;
-    }
-    50% {
-        background-color: #8a8068;
-    }
-    100% {
-        background-color: #bfb59d;
-    }
-}
 
-.color-changing-link {
-    animation: colorOscillation 4s linear infinite; 
-}
 
 #my_picture {
     width: 341px;

@@ -24,7 +24,7 @@ html {
 body {
         
     font-weight: 500;
-    background-image: url("../Images/Design\ sans\ titre.png") ;
+    background-image: url("../Images/beige-comb-painting-texture-background.jpg") ;
     background-repeat: no-repeat;
     background-size: 150% 200%;
     
@@ -124,13 +124,14 @@ nav a {
     padding-bottom: 3px;
     text-decoration:none ;
     text-transform: uppercase;
+    
 }
 
 nav a:hover {
     color: transparent;
     background: linear-gradient(to right, #ffffff, rgb(0, 0, 0) ) ; /* Dégradé de la gauche vers la droite */
     background-size: 200% 100%; /* La taille du dégradé est deux fois la largeur du texte */
-    animation: LinkAnimation 1.1s ease-in-out infinite;
+    animation: LinkAnimation 0.7s ease-in-out forwards;
     background-clip: text; /* Pour prendre en compte la couleur du texte */
     -webkit-background-clip: text;
 }
