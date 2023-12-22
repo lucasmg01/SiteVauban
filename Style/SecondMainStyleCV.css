@@ -21,8 +21,10 @@ html {
     font-size: 100%;
 }
 
-body {
-    background-color:#f0ece2 ;
+body{
+    background-image: url("../Images/Design\ sans\ titre.png") ;
+    background-repeat: no-repeat;
+    background-size: 150% 200%;
 }
 
 #bloc {
@@ -37,7 +39,7 @@ body {
 
 /* Styles pour l'en-tête (header) */
 header h1 {
-    
+    margin-top: 50px;
     font-size: 2.5em;
     font-weight: normal;
     color:#596e79 ;
@@ -45,16 +47,7 @@ header h1 {
     font-family: 'Dancing Script', cursive;
 }
 
-header h2 {
-    font-family: "OpenSans-Regular", sans-serif;
-    font-size: 1.1em;
-    font-weight: normal;
-    margin-top:0;
-    color:#596e79 ;
-    margin-left: 10px;
-    font-family: 'Alegreya', serif;
-    font-size: 1.5em;
-}
+
 
 #My_caricature {
     width: 200px;
@@ -92,16 +85,34 @@ header h2 {
 
 #nav_menu {
     font-family: 'Alegreya', serif;
+    border: #ffffff 5px solid;
+    border-right: 0px;
+    border-left: 0px;
+    border-radius: 5px;
+   
+    width: 100%;
     float: right;
     z-index: 3;
-    margin-right: 50px;
-    margin-bottom: 50px;
+    margin-top: 50px;
+   
+    
 }
 
 nav li {
     display: inline-block;
     margin-right: 15px;
     list-style-type: none;
+    
+}
+.navTitle {
+    padding-right: 750px;
+    font-weight: normal;
+    
+    color:#596e79 ;
+    
+    font-family: 'Alegreya', serif;
+    font-size: 1.5em;
+    
 }
 
 nav a {
@@ -113,14 +124,20 @@ nav a {
 }
 
 nav a:hover {
-    color: black;
-    border-bottom-width: 3px;
+    color: transparent;
+    background: linear-gradient(to right, #ffffff, rgb(0, 0, 0) ) ; /* Dégradé de la gauche vers la droite */
+    background-size: 200% 100%; /* La taille du dégradé est deux fois la largeur du texte */
+    animation: LinkAnimation 1.3s ease-in-out infinite;
+    background-clip: text; /* Pour prendre en compte la couleur du texte */
+    -webkit-background-clip: text;
 }
 
-nav ul li:hover {
-    color: antiquewhite;
-}
-
+@keyframes LinkAnimation {
+    
+    to {
+      background-position: -100% 0; /* Termine à l'extérieur de l'écran à gauche */
+    }
+  }
 /* Styles pour le déroulement et les onglets */
 .déroulement {
     position: relative;
