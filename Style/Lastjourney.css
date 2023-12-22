@@ -160,11 +160,13 @@ aside h2{
 }
 .meteo{
     border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
+    border: white 5px solid;
 }
 .widget_autocomplete_preview{
     margin-left: 24%;
     border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
     margin-top: 30px;
+    border: white 5px solid;
 }
 #ileaside{
     margin-top: 6%;

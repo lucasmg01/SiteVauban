@@ -22,8 +22,8 @@ html {
 }
 
 body {
-    
-    
+        
+    font-weight: 500;
     background-image: url("../Images/Design\ sans\ titre.png") ;
     background-repeat: no-repeat;
     background-size: 150% 200%;
@@ -209,7 +209,7 @@ nav a:hover {
     left: 8%;
     right: 0;
     top: 74%;
-    background-color: rgba(200, 172, 126, 0.65);
+    background-color: rgba(0, 0, 0, 0.2);
     max-height: 35px;
     max-width: 1300px;
     border-radius: 10px;
@@ -222,7 +222,8 @@ nav a:hover {
 }   
 
 #bannertext {
-    color: #596e79 ;
+    color: #f1f2f2 ;
+    font-weight: 600;
     padding-left: 20px;
     position: relative;
     top: 8px;
