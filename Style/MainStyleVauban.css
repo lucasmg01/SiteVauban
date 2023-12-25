@@ -26,17 +26,18 @@ body {
     font-weight: 500;
     background-image: url("../Images/beige-comb-painting-texture-background.jpg") ;
     background-repeat: no-repeat;
-    background-size: 150% 200%;
+    
+    
     
 }
 
 #bloc {
-    margin:0 auto;
+    margin:0 auto 0;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;
     color: black;
     width: 1460px;
-    block-size: 1460px;
+    
     margin-left: 2%;
 }
 
@@ -323,6 +324,5 @@ aside {
     font-family: "OpenSans-Regular", sans-serif;
   
 }
-
 
 

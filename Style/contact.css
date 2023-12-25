@@ -1,0 +1,105 @@
+@charset "utf_8";
+body{
+    width: 100vw;
+}
+section {
+    position: relative;
+    background-image: url(../Images/v897-wan-03a.jpg);
+    background-size: 100%;
+    z-index: 1;
+    font-family:"Lora-Regular" ;
+    margin-bottom: 6rem;
+    
+}
+section h1{
+    font-size: 2.5em;
+    font-weight: normal;
+    color:#596e79 ;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    
+}   
+section fieldset {
+    border: 5px solid transparent;
+    border-image: linear-gradient(150deg, rgba(238,226,240,1) 37%, rgba(192,186,162,1) 100%);
+    border-image-slice: 1;
+
+    width: 80%;
+    
+    margin-top: 30px;
+    margin-left: 10%;
+}
+section label {
+    margin: 10px;
+}
+section input {
+    margin: 10px;
+    height: 20px;
+    border: #596e79 2px solid;
+    border-radius: 5px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
+    font-weight: 500;
+    
+}
+section textarea {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
+    font-weight: 500; 
+    border: #596e79 2px solid;
+    border-radius: 5px;
+    width: 80%;
+}
+.ModalBox {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.248);
+    
+}
+
+.modalbox-content {
+    background-color: rgb(220, 220, 194);
+    margin: auto;
+    padding: 20px;
+    border: 1px solid rgb(201, 201, 181);
+    width: 60%;
+    line-height: 30px;
+    border-radius: 15px;
+    box-shadow: 3px 4px 3px rgba(72, 69, 69, 0.6);
+}
+
+.closemodal {
+    color: rgb(0, 0, 0);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+.closemodal:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+
+#mybutton {
+    margin-left: 10%;
+    margin-top: 40px;
+    padding: 7px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.2em;
+    font-weight: 500; 
+    border: #596e79 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+   
+}

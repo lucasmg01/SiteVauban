@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <!--[if It IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+            <![endif]-->
+    <meta charset="utf-8">
+    <title>Sur les traces de Vauban</title>
+    <link rel="stylesheet" href="../Style/MainStyleVauban.css"/>
+    <link rel="stylesheet" href="../Style/contact.css">
+    <link rel="stylesheet" type="text/css" href="../wow/engine1/style.css" />
+	<script type="text/javascript" src="../wow/engine1/jquery.js"></script>
+    <script src="https://kit.fontawesome.com/0306442980.js" crossorigin="anonymous"></script>
+    </head>
+    <body id="bloc">
+        <header>
+            
+                <img  class="titres_header" id="My_caricature"  src="../Images/Default_Create_a_caricature_of_a_young_boy_with_brown_short_ha_3_3ad8b9fc-9dfc-474a-9073-a857e6c57263_0.png" alt="Votre texte alternatif ici">
+                <h1 class="titres_header">MANGIACOTTI<br>Lucas</h1>
+                
+                
+                    <nav id="nav_menu">
+                        
+                            <ul>
+                                <li class="navTitle">Sur les traces de VAUBAN</li> 
+                                <li class="links" class="firtsLinks"><a href="../indexVauban.html">Accueil</a></li>
+                                <li class="links"><a href="./cvvauban.html">CV</a></li>
+                                <li id="animation" class="déroulement" class="links"><a href="#">Reportages</a>
+                                    <div class="onglets">
+                                        <a href="./Voyagepréféré.html#bourgogne">Bourgogne</a>
+                                        <a href="./LastThreeJourney.html#ilederé">Ile de Ré</a>
+                                        <a href="./LastThreeJourney.html#arras">Arras</a>
+                                        <a href="./LastThreeJourney.html#camaret">Camaret-Sur-Mer</a>
+                                    </div>
+                                </li>
+                                <li  class="links"><a href="#">Contact</a></li>
+            
+                            </ul>
+                        
+                
+        
+                    </nav>
+            
+            <img class="séparator" src="../Images/divider-36053.png">
+           
+           
+        
+        
+           
+       
+        <div id="image_container">
+                <img id="image_banner" src="../Images/artworkmain.png" alt="image image banner">
+                <div id="text_overlay">
+                    <p id="bannertext">Vauban, un génie réformateur</p>
+                    
+                    <button class="lien">Pourquoi avoir créé ce site ? <img class="red_button" src="../Images/icone-fleche-droite-grise.png"></button>
+                    
+                </div>
+                <div id="mymodal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>J'ai mis en place ce site dans le cadre de mon cours de création de site web, avec pour objectif de mettre en pratique les compétences que j'ai acquises et de partager des informations pertinentes avec vous, visiteurs. L'ambition ici est de vous offrir un espace en ligne où vous pourrez trouver des ressources, des articles intéressants, et peut-être même découvrir de nouvelles idées.</p>
+
+                        <p>Que vous soyez ici par curiosité, par intérêt personnel, ou que vous cherchiez des informations spécifiques, j'espère que votre visite sera agréable et instructive.</p>
+
+                        <p>N'hésitez pas à explorer les différentes sections du site et à me faire part de vos commentaires. Votre retour est essentiel pour m'aider à améliorer continuellement cette plateforme.</p>
+
+                        <p>Merci de m'accompagner dans cette aventure en ligne !</p>
+                       
+                        
+                    </div>
+                </div>
+                <script>
+                    //* "lire" la boite modale"
+                    var modal = document.getElementById ("mymodal");
+                    //* "lire" le bouton pour ouvrir la boite modale
+                    var btn = document.getElementsByClassName("lien")[0];
+                    //* "lire" l'élément <span> qui permettra de fermer la boite modale
+                    var span = document.getElementsByClassName("close")[0];
+    
+                    //* lorsque l'utilisateur clique sur le boutton 
+                    btn.onclick = function(){
+                        modal.style.display = "block"
+                    }
+                    //*lorsque l'utilisateur clique sur le bouton fermer 
+                    span.onclick = function() {
+                        modal.style.display = "none"
+                    }
+                    //* lorsque l'utilisateur clique en dehors de la boite modale et pour permettre de la femrer
+                    window.onclick = function(event) {
+                        if(event.target == modal) {
+                            modal.style.display = "none"
+                        }
+                    }
+                
+                </script>
+        </div>
+        
+    </header>
+    <section>
+        <h1>Dites nous en plus sur vous !</h1>
+        <div class="generalinfo">
+            <form action="" method="post">
+           
+                <fieldset>
+                    <legend>Informations générales : </legend>
+                    <label for="id_name">Nom: </label>
+                        <input type="text" name="txt_name" id="id_name"
+                            placeholder="ex:Dupont" size="30" maxlength="15">
+                    <label class="float" for="id_firstname">Prénom: </label>
+                            <input type="text" name="txt_name" id="id_firstname"
+                                placeholder="ex:Lucas" size="30" maxlength="15">
+                
+                    
+                   
+                        <br><label for="id_birthdate">Date de naissance : </label>
+                        <input id="birthdate" type="date" name="txt_birthdate"
+                        min="1900-01-01" max="2023-11-17" required>
+                    
+                
+                   
+                
+                    
+                
+                
+                </fieldset>
+                    
+            </form>
+        </div>
+            
+           
+           <form>
+            <fieldset>
+                <legend>Infos complémentaires</legend>
+                
+                
+                <br><label for="id_localite">Localité : </label>
+                        <input id="id_localite" type="text" name="txt_localite">
+                <br><label id="id_email">E-mail : </label>
+                        <input type="email" name="txt_email" value="default@example.com"
+                        size="32" minlength="3" maxlength="64" id="id_mail">
+                <br><label for="id_tel" >Téléphone: </label>
+                        <input id="id_tel" name="txt_tel" type="tel" list="id_defaulttels">
+                            <datalist id="id_defaulttels">
+                                <option value="01 23 45 67 89">
+                                <option value="01 90 45 67 89">
+                                <option value="01 23 28 67 89">
+                                <option value="01 23 45 92 89">
+                                <option value="01 57 45 67 89">
+                            </datalist>
+                            <div class="centreinterets">
+                                <br><label for="id_interest">Centres d'interets</label>
+                                    <select id="id_interest" >
+                                        <option value="musique">Musique</option>
+                                        <option value="jeuxvidéos">Jeux-vidéos</option>
+                                        <option value="lecture">lecture</option>
+                                    </select>
+                                </div>
+                </fieldset>
+            </form>
+
+            <div class="commentaire">
+            <form>
+                <fieldset>
+                    <legend>Commentaires</legend>
+                        <br><label id="votrecom" for="id_comment">Votre commentaire : </label>
+                        <br><textarea name="txt_comment" id="id_comment" rows="5"cols="100%">votre avis nous intéresse</textarea>
+                    
+            </div>
+                </fieldset> 
+            <div id="mymodal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>Bonjour ;<br>Merci d'avoir consacré quelques minute afin de remplir ce formulaire. 
+                        <br>Vos informations qui nous seront très précieuses!!! 
+                        <br>Malheureusement il m'est impossible de revenir vers vous, je suis incapable actuellement de gérer les données issues de formulaires. Il faudra pour cela attendre l'unité d'apprentissage "mySQL" que je suivrais malheureusement l'année prochaine 
+                        <br>Je suis désolé pour ce désagrément. 
+                        <br>Mangiacotti Lucas</br>
+                </div>
+            </div>
+            
+           
+            
+            <div id="mybuttontndiv">
+                <button id="mybutton" type="button">Envoyer</button>
+            </div>
+            <div id="myModalBox" class="ModalBox">
+                <div class="modalbox-content">
+                    <span class="closemodal">&times;</span>
+                    <p>Bonjour ;<br>Merci d'avoir consacré quelques minute afin de remplir ce formulaire. 
+                        <br>Vos informations qui nous seront très précieuses!!! 
+                        <br>Malheureusement il nous sera impossible de revenir vers vous, nous sommes incapables actuellement de gérer les données issues de formulaires. Il faudra pour cela attendre l'unité d'apprentissage "mySQL" que nous suivrons malheureusement l'année prochaine 
+                        <br>Nous sommes désolés pour ce désagrément. 
+                        <br>Mangiacotti Lucas !</p>
+                </div>
+            </div>
+            
+           
+            </form>
+            
+            <script>
+                //* "lire" la boite modable"
+                var modale = document.getElementById ("myModalBox");
+                //* "lire" le bouton pour ouvrir la boite modale
+                var button = document.getElementById("mybutton");
+                //* "lire" l'élément <span> qui permettra de fermer la boite modale
+                var spanInline = document.getElementsByClassName("closemodal")[0];
+
+                //* lorsque l'utilisateur clique sur le boutton 
+                button.onclick = function(){
+                    modale.style.display = "block"
+                }
+                //*lorsque l'utilisateur clique sur le bouton fermer 
+                spanInline.onclick = function() {
+                    modale.style.display = "none"
+                }
+                //* lorsque l'utilisateur clique en dehors de la boite modale et pour permettre de la femrer
+                window.onclick = function(event) {
+                    if(event.target == modale) {
+                        modale.style.display = "none"
+                    }
+                    
+                }
+            </script>
+            
+        </section>
+        
+            <div id="wowslider-container1">
+                <div class="ws_images"><ul>
+                        <li><img src="../wowImg/1.jpg" alt="1" title="1" id="wows1_0"/></li>
+                        <li><img src="../wowImg/2.jpg" alt="2" title="2" id="wows1_1"/></li>
+                        <li><img src="../wowImg/3.jpg" alt="3" title="3" id="wows1_2"/></li>
+                        <li><img src="../wowImg/4.jpg" alt="4" title="4" id="wows1_3"/></li>
+                        <li><a href="http://wowslider.net"><img src="../wowImg/5.jpg" alt="html slider" title="5" id="wows1_4"/></a></li>
+                        <li><img src="../wowImg/6.jpg" alt="6" title="6" id="wows1_5"/></li>
+                    </ul></div>
+                    <div class="ws_bullets"><div>
+                        <a href="#" title="1"><span><img src="../wowImg/1.jpg" alt="1"/>1</span></a>
+                        <a href="#" title="2"><span><img src="../wowImg/2.jpg" alt="2"/>2</span></a>
+                        <a href="#" title="3"><span><img src="../wowImg/3.jpg" alt="3"/>3</span></a>
+                        <a href="#" title="4"><span><img src="../wowImg/4.jpg" alt="4"/>4</span></a>
+                        <a href="#" title="5"><span><img src="../wowImg/5.jpg" alt="5"/>5</span></a>
+                        <a href="#" title="6"><span><img src="../wowImg/6.jpg" alt="6"/>6</span></a>
+                    </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slideshow</a> by WOWSlider.com v9.0</div>
+                <div class="ws_shadow"></div>
+                </div>	
+                <script type="text/javascript" src="../wow/engine1/wowslider.js"></script>
+                <script type="text/javascript" src="../wow/engine1/style.css"></script>
+       
+    </body>
+</html>
+
+

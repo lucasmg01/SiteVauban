@@ -2,7 +2,7 @@
 
 
 section {
-    width: 65%;
+    
     border: solid;
     border-width: 5px 3px 3px 5px;
     border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
@@ -115,7 +115,7 @@ section video {
     color: #596e79;
 }
 
-.color-changing-link {
+#color-changing-link {
     text-align: center;
     padding: 5px;
     background-color: #bfb59d;
@@ -127,7 +127,7 @@ section video {
 
 
 
-/* Animation continue */
+
 
 
 #my_picture {
