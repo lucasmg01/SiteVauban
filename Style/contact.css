@@ -2,13 +2,19 @@
 body{
     width: 100vw;
 }
-section {
+section{
+
+    margin-bottom: 5rem;
     position: relative;
     background-image: url(../Images/v897-wan-03a.jpg);
     background-size: 100%;
-    z-index: 1;
+    
+    z-index: index -10;
     font-family:"Lora-Regular" ;
     margin-bottom: 6rem;
+
+
+    
     
 }
 section h1{
@@ -53,7 +59,7 @@ section textarea {
 .ModalBox {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 80;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -102,4 +108,14 @@ section textarea {
     border-radius: 5px;
     cursor: pointer;
    
+}
+
+.endsite{
+    background-color: rgba(197, 168, 132, 0.07);
+    border-radius: 15px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color:#596e79 ;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
 }

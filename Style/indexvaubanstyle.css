@@ -99,10 +99,10 @@ section i[class="fa-solid fa-circle-up fa-fade"] {
     color: #998e74;
 }
 section video {
-    margin-top: 40px;
-    margin-left: 170px;
-    width: 600px;
-    height: 300px;
+    margin-top: 2.5rem;
+    margin-left: 10.625rem;
+    width: 37.5rem;
+    height: 18.75rem;
     border-radius: 20px;
     border: white solid 8px;
    
@@ -131,39 +131,44 @@ section video {
 
 
 #my_picture {
-    width: 341px;
-    height: 270px;
+    width: 21.313rem;
+    height: 16.875rem;
 }
 
-/* Styles pour le pied de page (footer) */
 #footercontainer {
-   
+    width: 100%;
+    margin: 0 auto;
     clear: both;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Ajuster au besoin */
+    align-items: stretch; /* Assurer que les éléments aient la même hauteur */
 }
 
-#imgbrg {
-    width: 300px;
-    height: 150px;
+#imgbrg,  #villefrancheimg {
+    width: 17.5rem;
+    height: 9.375rem;
     border-radius: 25px;
     border: white solid;
     transition: transform 1s;
 }
-#imgbrg:hover {
+
+#imgbrg:hover, .footerimg:hover, #villefrancheimg:hover {
     transform: scale(1.1);
 }
-
+#pictures_div ul {
+    list-style: none;
+}
 #pictures_div {
-   
-    margin: 5px 130px 20px 180px;
-    
-
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1; /* Prendre l'espace restant */
+    margin: 1rem 0; /* Ajuster au besoin */
 
 }
-
 .footerimg {
-    height: 100px;
-    width: 150px;
+    height: 6.25rem;
+    width: 9.375rem;
     border-radius: 25px;
     transition: transform 1s;
     border: white solid;
@@ -172,9 +177,10 @@ section video {
 
 .imagegallery{
     display: flex;
-    flex: wrap;
+    flex-wrap: wrap;
     gap: 20px;
-    left:0 px;
+    
+    justify-content: space-between; /* Aligner horizontalement */
 }
 #pictures_div ul {
     list-style: none;
@@ -213,24 +219,88 @@ section video {
     position: relative;
 }
 #travel {
-    margin-left: 140px;
+    margin: 1rem 6.5rem; 
 }
+
 footer h1 {
     text-align: center;
     font-family: 'Dancing Script', cursive;
     font-size: 2.5em;
     font-weight: normal;
-    color:#596e79 ;
+    color: #596e79;
+    width: 18.75rem;
+}
+@media screen and (max-width: 1050px){
+    #listvauban li a{
+        font-size: 0.8em;
+    }
+}
+@media only screen and (min-width: 768px) {
+    #pictures_div {
+       margin: 0 5rem 0 5rem;
+        
+    }
+
+    #imgbrg,  #villefrancheimg {
+        width: 17.5rem;
+        height: 9.375rem;
+    }
+}
+
+@media only screen and (max-width: 1380px) {
+    #footercontainer {
+       display: block;
+        
+    }
+    #favourite_trip_div{
+        margin-left: 40%;
+    }
+    #pictures_div{
+        margin-left: 27%;
+    }
+    #accomodations_div{
+        margin-left: 40%;
+    }
+
+}
+@media only screen and (max-width: 900px) {
+   #pictures_div{
+    display: inline;
+    width: 50%;
+   }
+   #travel{
+    margin-left: 40%;
+   }
+        
+   
+
+}
+@media only screen and (max-width: 575px){
+    #footercontainer{
+        display: none;
+    }
+    #listvauban{
+        width: 88%;
+        margin-left: 3rem;
+        
+    }
+    #listvauban ul {
+        padding-left:10px ;
+    }
+}
+@media screen and (max-width: 910px){
+    #idvideovauban{
+        margin-left: 10px;
+    }
+
+ 
+   
+}
+@media screen and (max-width: 910px){
+    #idvideovauban{
+        width: 25rem;
+        height: 11rem;
+        margin-left: 0;
+    }
     
-    width: 300px;
-}
-#villefrancheimg {
-    width: 300px;
-    height: 150px;
-    border-radius: 25px;
-    border: white solid;
-    transition: transform 1s;
-}
-#villefrancheimg:hover {
-    transform: scale(1.1);
 }

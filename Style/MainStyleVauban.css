@@ -21,24 +21,26 @@ html {
     font-size: 100%;
 }
 
-body {
-        
-    font-weight: 500;
-    background-image: url("../Images/beige-comb-painting-texture-background.jpg") ;
-    background-repeat: no-repeat;
-    
-    
-    
-}
 
-#bloc {
+   
+    
+    
+    
+
+
+body {
     margin:0 auto 0;
+    margin-left: 20px;
     padding: 0;
     font-family:Arial, Helvetica, sans-serif;
     color: black;
-    width: 1460px;
+    width: 95vw;  
+    font-weight: 500;
+    background-image: url("../Images/beige-comb-painting-texture-background.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 300% 200%;
     
-    margin-left: 2%;
+   
 }
 
 /* Styles pour l'en-tête (header) */
@@ -74,9 +76,9 @@ header h1 {
     
 }
 .séparator {
-    width: 1500px;
-    height: 300px;
-    block-size: 50px;
+    width: 100%;
+    height: 19rem;
+    block-size: 3.125rem;
     margin-left: auto;
     margin-right: auto;
     z-index: 1;
@@ -109,7 +111,7 @@ nav li {
     
 }
 .navTitle {
-    padding-right: 750px;
+    padding-right: 50%;
     font-weight: normal;
     
     color:#596e79 ;
@@ -189,7 +191,7 @@ nav a:hover {
 #image_banner {
     margin-left: auto;
     margin-right: auto;
-    width: 1460px;
+    width: 95vw;
     height: 200px;
     border-radius: 5px;
     margin-top: 15px;
@@ -258,7 +260,7 @@ nav a:hover {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 80;
     padding-top: 100px;
     left: 0;
     top: 0;
@@ -313,7 +315,7 @@ section {
 
 /* Styles pour la barre latérale (aside) */
 aside {
-    width: 25%;
+    width: 23%;
     padding: 20px;
     border: solid;
     border-width: 3px 4px 3px 5px;
@@ -326,3 +328,77 @@ aside {
 }
 
 
+@media screen and (max-width: 1400px){
+    .navTitle{ 
+        display: none;
+    }
+    #nav_menu ul{
+       margin-left: 25%;
+       margin-right: 25%;
+    }
+   
+}
+@media screen and (max-width: 910px){
+    .navTitle{ 
+        display: none;
+    }
+    #nav_menu ul{
+       margin-left: 10px;
+    }
+ 
+   
+}
+@media screen and (max-width: 1200px){
+    aside {
+        float: left;
+        width: 85%;
+        padding:30px;
+    }
+    section {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 1050px){
+   
+    body{
+        margin-right: 2rem;
+    }
+    #image_banner{
+        width: 98%;
+        margin-right:3rem ;
+        margin-left: 0.1rem;
+    }
+    #text_overlay{
+        background:none;
+    }
+    .lien{
+        right: 3rem;
+    }
+}
+@media screen and (max-width: 625px){
+    #nav_menu a {
+        font-size: 0.85em;
+        
+    }
+    #nav_menu ul{
+        width: 100%;
+    }
+    #image_banner{
+        width: 93%;
+    }
+}
+
+@media screen and (max-width: 570px){
+    aside{
+      width: 78%;
+      border:#bfb59d 5px solid;
+    }
+    section{
+        width: 78%;
+        border:#bfb59d 5px solid;
+    }
+    #bannertext{
+        display: none;
+    }
+}

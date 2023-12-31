@@ -70,159 +70,113 @@
                         
                     </div>
                 </div>
-                <script>
-                    //* "lire" la boite modale"
-                    var modal = document.getElementById ("mymodal");
-                    //* "lire" le bouton pour ouvrir la boite modale
-                    var btn = document.getElementsByClassName("lien")[0];
-                    //* "lire" l'élément <span> qui permettra de fermer la boite modale
-                    var span = document.getElementsByClassName("close")[0];
-    
-                    //* lorsque l'utilisateur clique sur le boutton 
-                    btn.onclick = function(){
-                        modal.style.display = "block"
-                    }
-                    //*lorsque l'utilisateur clique sur le bouton fermer 
-                    span.onclick = function() {
-                        modal.style.display = "none"
-                    }
-                    //* lorsque l'utilisateur clique en dehors de la boite modale et pour permettre de la femrer
-                    window.onclick = function(event) {
-                        if(event.target == modal) {
-                            modal.style.display = "none"
-                        }
-                    }
                 
-                </script>
         </div>
         
     </header>
     <section>
-        <h1>Dites nous en plus sur vous !</h1>
-        <div class="generalinfo">
-            <form action="" method="post">
-           
-                <fieldset>
-                    <legend>Informations générales : </legend>
-                    <label for="id_name">Nom: </label>
-                        <input type="text" name="txt_name" id="id_name"
-                            placeholder="ex:Dupont" size="30" maxlength="15">
-                    <label class="float" for="id_firstname">Prénom: </label>
-                            <input type="text" name="txt_name" id="id_firstname"
-                                placeholder="ex:Lucas" size="30" maxlength="15">
-                
-                    
-                   
-                        <br><label for="id_birthdate">Date de naissance : </label>
-                        <input id="birthdate" type="date" name="txt_birthdate"
-                        min="1900-01-01" max="2023-11-17" required>
-                    
-                
-                   
-                
-                    
-                
-                
-                </fieldset>
-                    
-            </form>
-        </div>
+          <div class="sectionform"> 
+            <h1>Dites nous en plus sur vous !</h1>
+            <div class="generalinfo">
+                <form action="" method="post">
             
-           
-           <form>
-            <fieldset>
-                <legend>Infos complémentaires</legend>
+                    <fieldset>
+                        <legend>Informations générales : </legend>
+                        <label for="id_name">Nom: </label>
+                            <input type="text" name="txt_name" id="id_name"
+                                placeholder="ex:Dupont" size="30" maxlength="15">
+                        <label class="float" for="id_firstname">Prénom: </label>
+                                <input type="text" name="txt_name" id="id_firstname"
+                                    placeholder="ex:Lucas" size="30" maxlength="15">
+                    
+                        
+                    
+                            <br><label for="id_birthdate">Date de naissance : </label>
+                            <input id="birthdate" type="date" name="txt_birthdate"
+                            min="1900-01-01" max="2023-11-17" required>
+                        
+                    
+                    
+                    
+                        
+                    
+                    
+                    </fieldset>
+                        
+                </form>
+            </div>
                 
-                
-                <br><label for="id_localite">Localité : </label>
-                        <input id="id_localite" type="text" name="txt_localite">
-                <br><label id="id_email">E-mail : </label>
-                        <input type="email" name="txt_email" value="default@example.com"
-                        size="32" minlength="3" maxlength="64" id="id_mail">
-                <br><label for="id_tel" >Téléphone: </label>
-                        <input id="id_tel" name="txt_tel" type="tel" list="id_defaulttels">
-                            <datalist id="id_defaulttels">
-                                <option value="01 23 45 67 89">
-                                <option value="01 90 45 67 89">
-                                <option value="01 23 28 67 89">
-                                <option value="01 23 45 92 89">
-                                <option value="01 57 45 67 89">
-                            </datalist>
-                            <div class="centreinterets">
-                                <br><label for="id_interest">Centres d'interets</label>
-                                    <select id="id_interest" >
-                                        <option value="musique">Musique</option>
-                                        <option value="jeuxvidéos">Jeux-vidéos</option>
-                                        <option value="lecture">lecture</option>
-                                    </select>
-                                </div>
-                </fieldset>
-            </form>
-
-            <div class="commentaire">
+            
             <form>
                 <fieldset>
-                    <legend>Commentaires</legend>
-                        <br><label id="votrecom" for="id_comment">Votre commentaire : </label>
-                        <br><textarea name="txt_comment" id="id_comment" rows="5"cols="100%">votre avis nous intéresse</textarea>
+                    <legend>Infos complémentaires</legend>
                     
-            </div>
-                </fieldset> 
-            <div id="mymodal" class="modal">
-                <div class="modal-content">
-                    <span class="close">&times;</span>
-                    <p>Bonjour ;<br>Merci d'avoir consacré quelques minute afin de remplir ce formulaire. 
-                        <br>Vos informations qui nous seront très précieuses!!! 
-                        <br>Malheureusement il m'est impossible de revenir vers vous, je suis incapable actuellement de gérer les données issues de formulaires. Il faudra pour cela attendre l'unité d'apprentissage "mySQL" que je suivrais malheureusement l'année prochaine 
-                        <br>Je suis désolé pour ce désagrément. 
-                        <br>Mangiacotti Lucas</br>
-                </div>
-            </div>
-            
-           
-            
-            <div id="mybuttontndiv">
-                <button id="mybutton" type="button">Envoyer</button>
-            </div>
-            <div id="myModalBox" class="ModalBox">
-                <div class="modalbox-content">
-                    <span class="closemodal">&times;</span>
-                    <p>Bonjour ;<br>Merci d'avoir consacré quelques minute afin de remplir ce formulaire. 
-                        <br>Vos informations qui nous seront très précieuses!!! 
-                        <br>Malheureusement il nous sera impossible de revenir vers vous, nous sommes incapables actuellement de gérer les données issues de formulaires. Il faudra pour cela attendre l'unité d'apprentissage "mySQL" que nous suivrons malheureusement l'année prochaine 
-                        <br>Nous sommes désolés pour ce désagrément. 
-                        <br>Mangiacotti Lucas !</p>
-                </div>
-            </div>
-            
-           
-            </form>
-            
-            <script>
-                //* "lire" la boite modable"
-                var modale = document.getElementById ("myModalBox");
-                //* "lire" le bouton pour ouvrir la boite modale
-                var button = document.getElementById("mybutton");
-                //* "lire" l'élément <span> qui permettra de fermer la boite modale
-                var spanInline = document.getElementsByClassName("closemodal")[0];
+                    
+                    <br><label for="id_localite">Localité : </label>
+                            <input id="id_localite" type="text" name="txt_localite">
+                    <br><label id="id_email">E-mail : </label>
+                            <input type="email" name="txt_email" value="default@example.com"
+                            size="32" minlength="3" maxlength="64" id="id_mail">
+                    <br><label for="id_tel" >Téléphone: </label>
+                            <input id="id_tel" name="txt_tel" type="tel" list="id_defaulttels">
+                                <datalist id="id_defaulttels">
+                                    <option value="01 23 45 67 89">
+                                    <option value="01 90 45 67 89">
+                                    <option value="01 23 28 67 89">
+                                    <option value="01 23 45 92 89">
+                                    <option value="01 57 45 67 89">
+                                </datalist>
+                                <div class="centreinterets">
+                                    <br><label for="id_interest">Centres d'interets</label>
+                                        <select id="id_interest" >
+                                            <option value="musique">Musique</option>
+                                            <option value="jeuxvidéos">Jeux-vidéos</option>
+                                            <option value="lecture">lecture</option>
+                                        </select>
+                                    </div>
+                    </fieldset>
+                </form>
 
-                //* lorsque l'utilisateur clique sur le boutton 
-                button.onclick = function(){
-                    modale.style.display = "block"
-                }
-                //*lorsque l'utilisateur clique sur le bouton fermer 
-                spanInline.onclick = function() {
-                    modale.style.display = "none"
-                }
-                //* lorsque l'utilisateur clique en dehors de la boite modale et pour permettre de la femrer
-                window.onclick = function(event) {
-                    if(event.target == modale) {
-                        modale.style.display = "none"
-                    }
-                    
-                }
-            </script>
+                <div class="commentaire">
+                <form>
+                    <fieldset>
+                        <legend>Commentaires</legend>
+                            <br><label id="votrecom" for="id_comment">Votre commentaire : </label>
+                            <br><textarea name="txt_comment" id="id_comment" rows="5"cols="100%">votre avis nous intéresse</textarea>
+                        
+                </div>
+                    </fieldset> 
+                <div id="mymodal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Bonjour ;<br>Merci d'avoir consacré quelques minute afin de remplir ce formulaire. 
+                            <br>Vos informations qui nous seront très précieuses!!! 
+                            <br>Malheureusement il m'est impossible de revenir vers vous, je suis incapable actuellement de gérer les données issues de formulaires. Il faudra pour cela attendre l'unité d'apprentissage "mySQL" que je suivrais malheureusement l'année prochaine 
+                            <br>Je suis désolé pour ce désagrément. 
+                            <br>Mangiacotti Lucas</br>
+                    </div>
+                </div>
+                
             
+                
+                <div id="mybuttontndiv">
+                    <button id="mybutton" type="button">Envoyer</button>
+                </div>
+                <div id="myModalBox" class="ModalBox">
+                    <div class="modalbox-content">
+                        <span class="closemodal">&times;</span>
+                        <p>Bonjour ;<br>Merci d'avoir consacré quelques minute afin de remplir ce formulaire. 
+                            <br>Vos informations qui nous seront très précieuses!!! 
+                            <br>Malheureusement il nous sera impossible de revenir vers vous, nous sommes incapables actuellement de gérer les données issues de formulaires. Il faudra pour cela attendre l'unité d'apprentissage "mySQL" que nous suivrons malheureusement l'année prochaine 
+                            <br>Nous sommes désolés pour ce désagrément. 
+                            <br>Mangiacotti Lucas !</p>
+                    </div>
+                </div>
+                
+            
+                </form>
+               
+           
         </section>
         
             <div id="wowslider-container1">
@@ -231,7 +185,7 @@
                         <li><img src="../wowImg/2.jpg" alt="2" title="2" id="wows1_1"/></li>
                         <li><img src="../wowImg/3.jpg" alt="3" title="3" id="wows1_2"/></li>
                         <li><img src="../wowImg/4.jpg" alt="4" title="4" id="wows1_3"/></li>
-                        <li><a href="http://wowslider.net"><img src="../wowImg/5.jpg" alt="html slider" title="5" id="wows1_4"/></a></li>
+                        <li><a href="http://wowslider.net"><img src="../wowImg/5.jpg" alt="jquery carousel" title="5" id="wows1_4"/></a></li>
                         <li><img src="../wowImg/6.jpg" alt="6" title="6" id="wows1_5"/></li>
                     </ul></div>
                     <div class="ws_bullets"><div>
@@ -241,13 +195,69 @@
                         <a href="#" title="4"><span><img src="../wowImg/4.jpg" alt="4"/>4</span></a>
                         <a href="#" title="5"><span><img src="../wowImg/5.jpg" alt="5"/>5</span></a>
                         <a href="#" title="6"><span><img src="../wowImg/6.jpg" alt="6"/>6</span></a>
-                    </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">jquery slideshow</a> by WOWSlider.com v9.0</div>
+                    </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">image slider</a> by WOWSlider.com v9.0</div>
                 <div class="ws_shadow"></div>
                 </div>	
                 <script type="text/javascript" src="../wow/engine1/wowslider.js"></script>
-                <script type="text/javascript" src="../wow/engine1/style.css"></script>
+                <script type="text/javascript" src="../wow/engine1/script.js"></script>
+
+
+
+            
+        <div class="endsite">
+            <p>Merci d'avoir visité ce site. <br>Site créé par : <br>Lucas Mangiacotti</p>
+        </div>
+       
        
     </body>
+    <script>
+        // Gestion des modales
+    
+        // Première boîte modale
+        let modal = document.getElementById("mymodal");
+        let btn = document.getElementsByClassName("lien")[0];
+        let span = document.getElementsByClassName("close")[0];
+    
+        // Ouvrir la première boîte modale lorsque le bouton est cliqué
+        btn.onclick = function () {
+            modal.style.display = "block";
+        }
+    
+        // Fermer la première boîte modale lorsque le bouton de fermeture est cliqué
+        span.onclick = function () {
+            modal.style.display = "none";
+        }
+    
+        // Deuxième boîte modale
+        let modale = document.getElementById("myModalBox");
+        let button = document.getElementById("mybutton");
+        let spanInline = document.getElementsByClassName("closemodal")[0];
+    
+        // Ouvrir la deuxième boîte modale lorsque le bouton est cliqué
+        button.onclick = function () {
+            modale.style.display = "block";
+        }
+    
+        // Fermer la deuxième boîte modale lorsque le bouton de fermeture est cliqué
+        spanInline.onclick = function () {
+            modale.style.display = "none";
+        }
+    
+        // Gestion des clics en dehors des modales
+        window.onclick = function (event) {
+            // Si l'élément cliqué est la première boîte modale, la fermer
+            if (event.target == modal) {
+                modal.style.display = "none";
+            } 
+            // Si l'élément cliqué est la deuxième boîte modale, la fermer
+            else if (event.target == modale) {
+                modale.style.display = "none";
+            }
+        }
+    </script>
+    
+    
+            
 </html>
 
 

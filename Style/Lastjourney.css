@@ -161,19 +161,59 @@ aside h2{
 .meteo{
     border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
     border: white 5px solid;
+    width: 19.5rem;
+    height: 28.125rem;
 }
 .widget_autocomplete_preview{
     margin-left: 24%;
     border-radius:95% 4% 97% 5%/4% 94% 3% 95%;
     margin-top: 30px;
     border: white 5px solid;
+    width:12.5rem;
+    height:21.875rem;
+    
 }
 #ileaside{
     margin-top: 6%;
 }
 #meteoaside{
-    margin-top: 90%;
+    margin-top: 97%;
 }
 #camaretaside{
-    margin-top: 74.5%;
+    margin-top: 80%;
+}
+@media screen and (max-width:1200px) {
+    
+    #ileaside::before{
+        content: "Météo et Maps";
+        display: flex;
+        justify-content: center;
+        font-size: 3em;
+        font-weight: normal;
+        color:#596e79 ;
+        padding-top: 20px;
+        font-family: 'Dancing Script', cursive;
+        text-align: center;
+        text-shadow: 10px 10px 25px rgba(89, 110, 121, 0.36),
+        -10px 10px 25px rgba(89, 110, 121, 0.36),
+        -10px -10px 25px rgba(89, 110, 121, 0.36),
+         10px -10px 25px rgba(89, 110, 121, 0.36);
+         
+
+    }
+    #meteoaside{
+        margin-top: 2rem;
+    }
+    #camaretaside{
+        margin-top: 2rem;
+    }
+    
+}
+@media screen and (max-width:935px){
+    iframe{
+        width: 95%;
+    }
+    .widget_autocomplete_preview{
+        margin-left: 10px;
+    }
 }
