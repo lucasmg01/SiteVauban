@@ -247,22 +247,43 @@ footer h1 {
     }
 }
 
-@media only screen and (max-width: 1380px) {
-    #footercontainer {
-       display: block;
-        
-    }
-    #favourite_trip_div{
-        margin-left: 40%;
-    }
-    #pictures_div{
-        margin-left: 27%;
-    }
-    #accomodations_div{
-        margin-left: 40%;
-    }
+@media screen and (max-width: 1380px) {
+    
+   #pictures_div{
+    margin-left: 2rem ;
+    margin-right: 2rem;
+   }
+   .footerimg{
+    width: 130px;
+    height: 80px;
+   }
+   #imgbrg{
+    width: 240px;
+    height: 130px;
+   }
+   #villefrancheimg{
+    width: 240px;
+    height: 130px;
+    margin-left: 20px;
+   }
 
 }
+@media screen and (max-width: 1235px) {
+    
+    #favourite_trip_div{
+        display: none;
+
+    }
+    #accomodations_div{
+        display: none;
+    }
+    #pictures_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    }
+ }
 @media only screen and (max-width: 900px) {
    #pictures_div{
     display: inline;
@@ -304,3 +325,25 @@ footer h1 {
     }
     
 }
+@media screen and (min-width: 1460px){
+   #pictures_div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+    
+}
+@media screen and (min-width: 1900px){
+    #footercontainer{
+        width: 90%;
+    }
+    #pictures_div{
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     
+     height: 300px;
+    }
+     
+ }

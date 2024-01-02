@@ -428,3 +428,12 @@ _:-ms-input-placeholder, :root #wowslider-container1 .ws_playpause:after {line-h
 		display: none
 	}
 }
+@media screen and (max-width: 840px){
+	#wowslider-container1{
+        margin-left: 1rem;
+		width: 80%;
+    }.ws_gestures{
+        margin-left: 1rem;
+    }
+	
+}

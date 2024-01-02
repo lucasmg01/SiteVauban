@@ -9,7 +9,7 @@ section{
     background-image: url(../Images/v897-wan-03a.jpg);
     background-size: 100%;
     
-    z-index: index -10;
+    
     font-family:"Lora-Regular" ;
     margin-bottom: 6rem;
 
@@ -119,3 +119,10 @@ section textarea {
     text-align: center;
     font-family: 'Dancing Script', cursive;
 }
+@media screen and (max-width: 860px){
+    section{
+        width: 75%;
+    }
+ 
+}
+    

@@ -1,4 +1,3 @@
-/* Définition des polices */
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Lunasima&family=Raleway:wght@300&family=Roboto+Condensed:wght@500&display=swap');
@@ -213,9 +212,10 @@ nav a:hover {
     left: 8%;
     right: 0;
     top: 74%;
+    
     background-color: rgba(0, 0, 0, 0.2);
-    max-height: 35px;
-    max-width: 1300px;
+    max-height: 2.188rem;
+    max-width: 85%;
     border-radius: 10px;
 }
 
@@ -348,7 +348,7 @@ aside {
  
    
 }
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1205px){
     aside {
         float: left;
         width: 85%;
